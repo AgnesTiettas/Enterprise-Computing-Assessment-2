@@ -1,0 +1,26 @@
+.sidenav {
+    position:fixed; 
+    z-index:1; 
+    background-color: gainsboro; 
+    overflow-x: hidden;
+    transition: 0.5s; 
+}
+
+.sidenav a {
+    padding: 8px; 
+    color: green; 
+    display:block;
+    padding-top:60px; 
+
+
+}
+
+.sidenav a:hover {
+    color: grey; 
+
+}
+
+.sidenav .closebtn {
+    position:absolute; 
+    right:25px; 
+}
