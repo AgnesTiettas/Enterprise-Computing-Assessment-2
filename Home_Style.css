@@ -8,7 +8,7 @@
 
 body {
     min-height: 100vh; 
-    background: gainsboro
+    background: white;
    
 }
 
@@ -17,47 +17,158 @@ body {
     width: 270px; 
     margin:16px;
     border-radius:10px;
-    background:gray;
-    padding: 25px 20px; 
+    background:lightblue;
     height: calc(100vh - 32px); /*changing the height according to the page size*/
     transition: all 0.4s ease; 
 }
 
-.sidebar.collaposed {
+.sidebar.collapsed {
     width:85px;
 }
 
 .sidebar .header_sidebar{
     display:flex; 
     position:relative;
+    padding:25px 20px;
     align-items: center; 
     justify-content: space-between;
 
 }
+
+/*Top section of side bar*/
 .header_sidebar .logo img {
     width:50px;
     height:50px;
-    display:block; 
+    display:block;
     border-radius: 50%; 
 
 }
 
 .header_sidebar  .toggler {
-     height: 35px;
-  width: 35px;
-  color: #151A2D;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  background: #fff;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
-  transition: 0.4s ease;
+    height: 35px; 
+    width:35px; 
+    color:black;
+    border:none; 
+    display:flex; 
+    background: #fff;
+    align-items:center; 
+    justify-content: center; 
+    border-radius:5px; 
+    transition:0.4s ease; 
+
+   
+}
+
+.header_sidebar .sidebar-toggler{
+    position:absolute; 
+    right:20px;
+}
+
+.header_sidebar .menu-toggler {
+    display:none;
+}
+
+.sidebar.collapsed .header_sidebar  .toggler {
+    transform:translate(-4px,65px); 
+
+}
+.header_sidebar .toggler:hover {
+    background: #dde4fb;
+}
+
+.header_sidebar .toggler span {
+    transition:0.4s ease;
+}
+
+/*Flips the arrow when it is collapsed*/
+.sidebar.collapsed .header_sidebar .toggler i {  
+    transform:rotate(180deg);
+}
+
+.sidebarnav .nav-list{
+    list-style:none; 
+    display:flex; 
+    gap:4px;
+    padding: 0 15px; 
+    flex-direction:column;
+    transform: translateY(15px);
+    transition: 0.4s ease; 
+
+}
+
+.sidebar.collapsed .sidebarnav .firstnav {
+    transform:translateY(65px);
+}
+
+.sidebarnav .navlink{
+    display:flex; 
+    gap:12px; 
+    color:black;
+    white-space:nowrap; 
+    border-radius: 5px;
+    padding:12px 15px;
+    align-items:center; 
+    text-decoration: none;
+    transition:0.4s ease;
+}
+.sidebar.collapsed .sidebarnav .navlink{
+    border-radius: 12px;
+}
+.sidebar .sidebarnav .navlink .nav-label {
+    transition:opacity 0.3s ease;
+}
+.sidebar.collapsed .sidebarnav .navlink .nav-label {
+    opacity:0;
+    pointer-events:none;
 }
 
 
-.header_sidebar .menu-toggler {
-    position:absolute;
-    right:20px;
+.sidebarnav .navlink:hover {
+    color: black;
+    background:#fff;
+}
+.sidebarnav .nav-item {
+    position: relative; 
+}
+
+.sidebarnav .nav-tooltip {
+    position: absolute;
+    top: -10px;
+    opacity: 0;
+    color: #070707;
+    display: none;
+    pointer-events: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    white-space: nowrap;
+    background: #fff;
+    left: calc(100% + 25px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar.collapsed .sidebarnav .nav-tooltip{
+    display:block;
+
+}
+
+
+
+.sidebarnav .navlink:hover {
+    color: gray;
+    background:#fff;
+}
+
+
+.sidebarnav .nav-item:hover .nav-tooltip {
+    opacity:1; 
+    pointer-events: auto; 
+    transform:translateY(50%);
+    transition:all 0.4s ease;
+}
+
+.sidebarnav .secondnav {
+    position:absolute; 
+    bottom:30px;
+    width:100%
+
 }
