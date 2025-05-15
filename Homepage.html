@@ -9,13 +9,50 @@
         <script src="Home.js"></script>
     </head>
     <body> 
-        <div id="SideNav" class="sidenav">
-            <a href="javascript:void(0)" class="Closebtn" onlick="closeNav()"><i class="fa-solid fa-bars"></i></a>
-            <a href="#">About</a>
-        </div>
 
-        <h2>SideNav</h2>
-        <span onlick="openNav()"></span>
+
+        <aside class="sidebar">
+            <header class="header_sidebar">
+                <a href="#" class="logo">
+                    <img src="MacFieldslogo.png">
+                </a>
+                <button> 
+                    <span class="symbol-rounded">chevron_left</span>
+                </button>
+
+                <button class="menu-toggler">
+                    <span class="symbol-rounded">Menu</span>
+                </button>
+            </header>
+
+            <nav class="sidebarnav">
+                <!--Navigation Bar that displays at the top-->
+                <ul class="nav-listprimary">
+                    <li class="nav-item">
+                        <a href="#" class="navlink">
+                            <i class="fa-solid fa-bars"></i>
+                            <h2 title="Dashboard">Dashboard</h2>
+                        </a> 
+
+
+        
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-book">Subjects</i>
+                            <span class="nav-tooltip">Subjects</span> 
+
+
+                      
+                    </li>
+                    
+                    
+                </ul>
+            </nav>
+
+        </aside>
+
+
 
 
     </body>
