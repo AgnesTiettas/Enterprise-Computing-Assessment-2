@@ -20,6 +20,7 @@ body {
     background:lightblue;
     height: calc(100vh - 32px); /*changing the height according to the page size*/
     transition: all 0.4s ease; 
+    
 }
 
 .sidebar.collapsed {
@@ -73,7 +74,7 @@ body {
 
 }
 .header_sidebar .toggler:hover {
-    background: #dde4fb;
+    background: #2f3032;
 }
 
 .header_sidebar .toggler span {
@@ -166,9 +167,13 @@ body {
     transition:all 0.4s ease;
 }
 
+
 .sidebarnav .secondnav {
     position:absolute; 
     bottom:30px;
     width:100%
 
 }
+
+
+
