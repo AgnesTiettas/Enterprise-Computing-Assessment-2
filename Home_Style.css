@@ -175,5 +175,10 @@ body {
 
 }
 
+.subject-title {
+    color:grey; 
+    text-align: centre;
+    font-size:95%;
+}
 
 
