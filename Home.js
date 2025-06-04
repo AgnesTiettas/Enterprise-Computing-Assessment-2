@@ -23,14 +23,4 @@ const toggleMenu = (isMenuActive) => {
   menuToggler.querySelector("span").innerText = isMenuActive ? "close" : "menu";
 }
 
-const cardContainer = document.querySelector(".card-container");
 
-document.querySelector(".sidebar-toggler").addEventListener("click", () => {
-    sidebar.classList.toggle("collapsed");
-    
-    if (sidebar.classList.contains("collapsed")) {
-        cardContainer.style.marginLeft = "85px";
-    } else {
-        cardContainer.style.marginLeft = "270px";
-    }
-});
