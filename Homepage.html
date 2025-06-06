@@ -9,113 +9,131 @@
        
     </head>
     <body>
-        <aside class="sidebar">
-            <header class="header_sidebar">
-                <a href="#" class="logo">
-                    <img src="MacFieldslogo.png" alt="MFHS">
-                   
-                </a>
-    
-                <button class="toggler sidebar-toggler"> 
-                    <i class="fa-solid fa-chevron-left"></i>
-                </button>
+        <button class="toggle" onclick="toggleSidenav()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
 
-                <button class="toggler menu-toggler">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-                    
+        <nav id="sidenav">
+            <ul> 
+                <li class="nav-item" title="Dashboard">
+                        <a href="Homepage.html" class="navlink">
+                            <i class="fa-solid fa-chalkboard"></i>
+                            <span class="nav-label"> Dashboard</span>
+                        </a> 
+                </li>
+
+                <li class="nav-item" title="English Advanced">
+                    <a href="English.html" class="navlink">
+                        <i class="fa-solid fa-book" ></i>
+                        <span class="nav-label"> English Advanced</span>
+                    </a>
+                </li>
+
+                <li class="nav-item" title="Math Advanced">
+                    <a href="#" class="navlink">
+                        <i class="fa-solid fa-calculator"></i>
+                        <span class="nav-label"> Math Advanced</span>
+                    </a>
+                </li>
+
+                <li class="nav-item" title="Biology">
+                    <a href="#" class="navlink">
+                        <i class="fa-solid fa-dna"></i>
+                        <span class="nav-label"> Biology </span>
+                    </a>
+                </li>
+
+                <li class="nav-item" title="Chemistry">
+                    <a href="#" class="navlink">
+                        <i class="fa-solid fa-atom"></i>
+                        <span class="nav-label"> Chemistry</span>
+                    </a>
+                </li>
+ 
+
+            </ul>
+        <div id="overlay" onclick="toggleSidenav()"></div>
+        </nav>
+
+        <main>
+            <header>
+                <h1>Dashboard</h1>
             </header>
 
-            <nav class="sidebarnav">
-                <!--Navigation Bar that displays at the top-->
-                <ul class="nav-list firstnav">
-                    <li class="nav-item">
-                        <a href="#" class="navlink">
-                            <i class="fa-solid fa-bars"></i>
-                            <span class="nav-label">Dashboard</span>
-                            <span class="nav-tooltip">Dashboard</span>
-                        </a> 
-                       
-                    
+            <div class="article"> 
+                <div class="card_container">
 
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#" class="navlink">
-                            <i class="fa-solid fa-book"></i>
-                            <span class="nav-label">Scores</span>
-                            <span class="nav-tooltip">Scores</span>
-                         
-                        </a>
-                    </li>
-                    <hr>
-                    <h2 class="subject-title">Subjects</h2> 
-                    <li class="nav-item">
-                        <a href="English.html" class="navlink">
-                            <i class="fa-solid fa-book"></i>
-                            <span class="nav-label">English</span>
-                            <span class="nav-tooltip">English</span>
-                         
-                        </a>
-                    </li>
-
-                      
-                    
-                </ul>
-
-                <!--Bottom section navigation bar-->
-                <ul class="nav-list secondnav">
-                    <li class="nav-item">
-                        <a href="Profile.html" class="navlink">
-                            <i class="fa-solid fa-user" title="Profile"></i>
-                            <span class="nav-label">Profile</span>
-                        </a>
-                        <span class="nav-tooltip">Profile</span>
-                    </li>
-                </ul>
-            </nav> 
-
-        </aside>
-
-    
-
-        <div class="card-container">
-            <ul class="card">
-            <li> 
-                <i class="fa-solid fa-arrow-trend-up"></i>
-                <span class="text">
-                    <h2>Rank:2</h2>
-                    <p>Biology</p>
-                </span>
-            </li> 
-
-            <li> 
-                <i class="fa-solid fa-arrow-trend-up"></i>
-                <span class="text">
-                    <h2>Rank:4</h2>
-                    <p>English</p>
-                </span>
-            </li>  
-
-
-        </div> 
-
-        <div class="Card">
-            <div class="card_Back">
-                <h2>Info</h2>
-                <p>Rank: 2</p>
-                <p>Mark: 80%</p>
-                <p>Task Type: Exam</p>
-        
-            </div>
-        </div> 
-        
-
-
-
+                    <div class="Card">
+                        <div class="card_Front">
+                            <h2>English Advanced:</h2><br>
+                            <i><h4>Tasks Completed:3</h4></i>
+                        </div>
+                        <div class="card_Back">
+                            <h2>Details:</h2> <br>
+                            <p><b>Current Rank:</b> 2/100</p>
+                            <p><b>Average Mark:</b> 96%</p>
+                            <p><b>Average Grade:</b> A</p>
+                            <p><b>Task Type:</b> Exam</p>
+                        </div>
             
-        
-     <script src="Home.js"></script>
+                    </div>
 
+                    <div class="Card">
+                        <div class="card_Front">
+                            <h2>Math Advanced:</h2><br>
+                            <i><h4>Tasks Completed:3</h4></i>
+                        </div>
+                        <div class="card_Back">
+                            <h2>Details:</h2> <br>
+                            <p><b>Current Rank:</b> 30/100</p>
+                            <p><b>Average Mark:</b> 50%</p>
+                            <p><b>Average Grade:</b> C</p>
+                            <p><b>Task Type:</b> Exam</p>
+                        </div>
+            
+                    </div>
+
+                    <div class="Card">
+                        <div class="card_Front">
+                            <h2>Biology:</h2><br>
+                            <i><h4>Tasks Completed:3</h4></i>
+                        </div>
+                        <div class="card_Back">
+                            <h2>Details:</h2> <br>
+                            <p><b>Current Rank:</b> 60/100</p>
+                            <p><b>Average Mark:</b> 70%</p>
+                            <p><b>Average Grade:</b> B</p>
+                            <p><b>Task Type:</b> Exam</p>
+                        </div>
+            
+                    </div>
+
+                    <div class="Card">
+                        <div class="card_Front">
+                            <h2>Chemistry:</h2><br>
+                            <i><h4>Tasks Completed:3</h4></i>
+                        </div>
+                        <div class="card_Back">
+                            <h2>Details:</h2> <br>
+                            <p><b>Current Rank:</b> 59/100</p>
+                            <p><b>Average Mark:</b> 78%</p>
+                            <p><b>Average Grade:</b> B</p>
+                            <p><b>Task Type:</b> Exam</p>
+                        </div>
+            
+                    </div>
+                    
+                </div>
+
+                </div>
+
+         
+                <p> skdfjs kdfjsklfjsd fjsdkfj</p>
+            </div>
+
+
+
+        </main>
+    <script src="Home.js"></script>
     </body>
 </html>
