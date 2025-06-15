@@ -8,14 +8,14 @@
 
 body {
     display:flex;
-    overflow:hidden;
+    overflow:auto;
 
 }
 
 /*Expanding and minimising toggle button*/
 button.toggle {
     z-index: 2;
-    position:fixed;
+    position:absolute;
     left:22px;
     top:16px;
     font-size: large;
@@ -31,7 +31,7 @@ button.toggle {
 nav {
     flex:none;
     width:250px;
-    height:100vh;
+    height:170vh;
     background:lightblue;
     transition:all 0.3s;
     padding-top: 80px;
@@ -206,4 +206,9 @@ main {
     text-align: left;
 
 
+}
+
+img{
+    display:flex;
+    justify-content: center;
 }

@@ -1,0 +1,92 @@
+* { 
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+.Dashboard_Title_Container {
+    width:100%; 
+    height:20vh; 
+    background-image: url('bg3.jpg');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.Dashboard_title {
+    color: whitesmoke;
+    font-size: 42px;
+    margin-top: 10px;
+}
+.NavBar {
+    position:absolute;
+    display:flex;
+    justify-content: right;
+    top:0;
+    background-color: transparent;
+    padding: 20px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2); ;
+}
+
+.NavBar a {
+    float:right; 
+    font-size:22px; 
+    font-family: 'Gill Sans';
+    color: white;
+    padding: 10px;
+    text-decoration: double;
+    text-align: right;
+    border-radius: 20px;
+}
+
+.NavBar a:hover {
+    background-color: lightskyblue;
+}
+
+
+body {
+    background-color: white;
+}
+
+
+
+.card_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(260px,1fr)); /*Makes the cards responsive */
+
+}
+
+.Card {
+    width:200px;
+    height:200px;
+    position:relative;
+    margin:50px; 
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    
+ 
+
+}
+
+
+
+.card_Front{
+    text-align: center;
+    position:absolute;
+    font: 20px;
+    border-radius: 5px;
+    height:100%;
+    width: 100%; 
+    background-color:#018f9c;
+    padding:25%;
+
+
+
+}
+.card_Front{
+    z-index:1;
+}
+
