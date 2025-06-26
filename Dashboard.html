@@ -8,82 +8,68 @@
 
 
     <body>
-        <aside class="sidebar">
-            <header class="header_sidebar">
-                <a href="#" class="logo">
-                    <img src="MacFieldslogo.png">
-                    <img src="MacFieldslogo.png" alt="MFHS">
-                   
-                </a>
-                <button> 
-                    <span class="symbol-rounded">chevron_left</span>
-    
-                <button class="toggler sidebar-toggler"> 
-                    <i class="fa-solid fa-chevron-left"></i>
-                </button>
+        <nav class="navbar">
+            <div class="logo_item">
+                <i class="fa-solid fa-bars"></i>
+                <img src="MacFieldslogo.png" alt="MFHS">
+            </div>
 
-                <button class="menu-toggler">
-                    <span class="symbol-rounded">Menu</span>
-                <button class="toggler menu-toggler">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-                    
-            </header>
+            <div class="navbar_content">
+                <img src="Usericon.png" class="profile">
+            </div>
+        </nav> 
 
-            <nav class="sidebarnav">
-                <!--Navigation Bar that displays at the top-->
-                <ul class="nav-listprimary">
-                <ul class="nav-list firstnav">
-                    <li class="nav-item">
-                        <a href="#" class="navlink">
+        <nav class="sidebar">
+            <div class="menu_content">
+                <ul class="menu_items">
+                    <div class="menu_title menu_dashboard"></div>
+                    <li class="item">
+                        <div href="#" class="nav_link submenu_item">
                             <i class="fa-solid fa-bars"></i>
-                            <h2 title="Dashboard">Dashboard</h2>
-                            <span class="nav-label">Dashboard</span>
-                        </a> 
-                        <span class="nav-tooltip">Dashboard</span>
-                    
+                            <span class="navlink">Home</span>
+                            <i class="fa-solid fa-chevron-left"></i>
 
-
-        
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="fa-solid fa-book">Subjects</i>
-                            <span class="nav-tooltip">Subjects</span> 
-
-                    <li class="nav-item">
-                        <a href="#" class="navlink">
-                            <i class="fa-solid fa-book"></i>
-                            <span class="nav-label">Subjects</span> 
-                        </a>
-                        <span class="nav-tooltip">Subjects</span>
-                       
+                        </div> 
+                        <ul class="menu_items submenu">
+                            <a href="#" class="nav_link sublink"> Nav Sub</a>
+                        </ul>
                     </li>
 
-                      
-                    <li class="nav-item">
-                        <a href="#" class="navlink">
-                            <i class="fa-solid fa-book"></i>
-                            <span class="nav-label">Subjects</span> 
-                        </a>
-                        <span class="nav-tooltip">Subjects</span>
+                    <li class="item">
+                        <div href="#" class="nav_link submenu_item">
+                            <i class="fa-solid fa-bars"></i>
+                            <span class="navlink">overview</span>
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+                        <ul class="menu_items submenu"> 
+                            <a href="#" class="nav_link sublink"> Nab Sub link</a>
+                        </ul>
                     </li>
-                    
-                    
-      
+
+                    <ul class="menu_items">
+                        <div class="menu_title menu editor"></div>
+                        <li class="item">
+                            <a href="#" class="nav_link">
+                            <span class="navlink_icon">
+                                <i class="bx bxs-magic-wand"></i>
+                            </span>
+                            <span class="navlink">Magic build</span>
+                            </a>
+                        </li>
+                    </ul>
                 </ul>
+                <div class="bottom_content">
+                    <div class="bottom expand_sidebar">
+                        <i class="fa-solid fa-chevron-left"></i>
+  
+                    </div>
+                </div>
+            </div>
+        </nav>
 
-                <!--Side nav bar-->
-                <ul class="nav-list secondnav">
-                    <li class="nav-item">
-                        <a href="#" class="navlink">
-                            <i class="fa-solid fa-user" title="Profile"></i>
-                            <span class="nav-label">Profile</span>
-                        </a>
-                        <span class="nav-tooltip">Profile</span>
-                    </li>
-                </ul>
-            </nav>
+    
 
-        </aside>
+    
      <script src="dash.js"></script>
+    </body>
+</html>

@@ -5,20 +5,48 @@
     box-sizing: border-box; 
 
 }
-body {
-    min-height: 100vh; 
-    background: white;
-   
+body{
+    background-color: #e7f2fd;
 }
-.sidebar {
-    position: fixed; 
-    width: 270px; 
-    margin:16px;
-    border-radius:10px;
-    background:lightblue;
-    height: calc(100vh - 32px); /*changing the height according to the page size*/
-    transition: all 0.4s ease; 
+
+.navbar{
+    position:fixed; 
+    top:0; 
+    width:100%; 
+    left:0;
+    background-color: white;
+    display:flex; 
+    align-items:center; 
+    justify-content:space-between; 
+    padding: 15px 30px; 
+    z-index:1000; 
+    box-shadow:0 0 2px gray;
+
+
 }
-.sidebar.collapsed {
-    width:85px;
+
+.logo_item {
+    display: flex; 
+    align-items: center;
+    column-gap: 10px;
+    font-size:22px;
+    font-weight:500; 
+    color:skyblue;
+}
+
+.navbar img {
+    width:35px;
+    height:35px; 
+    border-radius: 50%;
+
+}
+
+.navbar_content i {
+    cursor:pointer; 
+    color:gray; 
+    font-size: 20px;
+}
+
+.sidebar{
+    
 }
