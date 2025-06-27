@@ -1,7 +1,12 @@
+    <!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
         <title>Student Dashboard</title>
         <link rel="stylesheet" href="Dashboard.css">
         <script src="https://kit.fontawesome.com/6a46cb65ec.js" crossorigin="anonymous"></script>
-        <script src="Home.js"></script>
+    
        
     </head>
     <body> 
@@ -9,9 +14,10 @@
 
     <body>
         <nav class="navbar">
+        
             <div class="logo_item">
-                <i class="fa-solid fa-bars"></i>
-                <img src="MacFieldslogo.png" alt="MFHS">
+                <i class="fa-solid fa-bars" id="sidebarOpen"></i>
+                <img src="MacFieldslogo.png" alt="MFHS">Macquarie Fields High School
             </div>
 
             <div class="navbar_content">
@@ -24,52 +30,81 @@
                 <ul class="menu_items">
                     <div class="menu_title menu_dashboard"></div>
                     <li class="item">
-                        <div href="#" class="nav_link submenu_item">
-                            <i class="fa-solid fa-bars"></i>
+                        <div href="#" class="nav_link submenu_item" >
+                            <span class="navlink_icon">
+                                <i class="fa-solid fa-bars"></i>
+                            </span>
+                            
                             <span class="navlink">Home</span>
-                            <i class="fa-solid fa-chevron-left"></i>
+                            <i class="fa-solid fa-chevron-down" id="arrow-left"></i>
 
                         </div> 
                         <ul class="menu_items submenu">
+                            <a href="#" class="nav_link sublink"> Nav Sub</a>
                             <a href="#" class="nav_link sublink"> Nav Sub</a>
                         </ul>
                     </li>
 
                     <li class="item">
                         <div href="#" class="nav_link submenu_item">
-                            <i class="fa-solid fa-bars"></i>
+                            <span class="navlink_icon">
+                                <i class="fa-solid fa-bars"></i>
+                            </span>
+                            
                             <span class="navlink">overview</span>
-                            <i class="fa-solid fa-chevron-left"></i>
+                            <i class="fa-solid fa-chevron-down" id="arrow-left"></i>
                         </div>
+
                         <ul class="menu_items submenu"> 
+                            <a href="#" class="nav_link sublink"> Nab Sub link</a>
                             <a href="#" class="nav_link sublink"> Nab Sub link</a>
                         </ul>
                     </li>
+                </ul>
 
-                    <ul class="menu_items">
-                        <div class="menu_title menu editor"></div>
-                        <li class="item">
-                            <a href="#" class="nav_link">
+
+                <ul class="menu_items">
+                    
+                    <li class="item">
+                        <a href="#" class="nav_link">
                             <span class="navlink_icon">
-                                <i class="bx bxs-magic-wand"></i>
+                                <i class="fa-solid fa-circle-user"></i>
                             </span>
                             <span class="navlink">Magic build</span>
-                            </a>
-                        </li>
-                    </ul>
+                        </a>
+                    </li>
+
+                    <li class="item">
+                        <a href="#" class="nav_link">
+                            <span class="navlink_icon">
+                                <i class="fa-solid fa-circle-user"></i>
+                            </span>
+                            <span class="navlink">Magic build</span>
+                        </a>
+                    </li> 
+
+                    
                 </ul>
+
+             
                 <div class="bottom_content">
                     <div class="bottom expand_sidebar">
-                        <i class="fa-solid fa-chevron-left"></i>
-  
+                        <span>Expand</span>
+                        <i class="fa-solid fa-chevron-right"></i>
                     </div>
+                    <div class="bottom collapse_sidebar">
+                        <span> Collapse</span>
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+
                 </div>
             </div>
         </nav>
+        <script src="dash.js"></script>
 
     
 
     
-     <script src="dash.js"></script>
+     
     </body>
 </html>

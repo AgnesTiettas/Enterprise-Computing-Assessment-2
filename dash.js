@@ -1,35 +1,57 @@
-//Initalise values 
-const sidebar =document.querySelector(".sidebar");
-const sidebarToggler = document.querySelector(".sidebar-toggler");
-const menuToggler = document.querySelector(".menu-toggler");
+const body= document.querySelector("body"); 
+const sidebar = document.querySelector(".sidebar");
+const submenuItem1 = document.querySelectorAll(".submenu_item")[0];
+const submenuItem2 = document.querySelectorAll(".submenu_item")[1];
+const sidebarToggle = document.querySelector("#sidebarOpen");
+const sidebarExpand= document.querySelector(".expand_sidebar");
 
-//Makes sure that the height values of the sidebar match 
 
-//Inital Height
-let NormalSidebarHeight= "calc(100vh - 32px)";
+// Open and close sidebar 
 
-//Height when collapsed
-let collapsedSidebarHeight ="56px";
-
-//Make the sidebar collapse 
-sidebarToggler.addEventListener("click", () => {
-    sidebar.classList.toggle("collapsed");
+sidebarToggle.addEventListener("click", () => {
+    sidebar.classList.toggle("close");
+    if(sidebar.classList.contains("close")) {
+        sidebar.classList.add("hoverable");
+    } else {
+        sidebar.classList.remove("hoverable");
+    }
+    
 });
 
-//Update the height of the sidebar and menu toggle the text
-const toggleMenu = (isMenuActive) => {
-  sidebar.style.height = isMenuActive ? `${sidebar.scrollHeight}px` : collapsedSidebarHeight;
-  menuToggler.querySelector("span").innerText = isMenuActive ? "close" : "menu";
-}
+// Expand the sidebar
+sidebarExpand.addEventListener("click", () => {
+    sidebar.classList.remove ("close", "hoverable");
 
-const cardContainer = document.querySelector(".card-container");
+});
 
-document.querySelector(".sidebar-toggler").addEventListener("click", () => {
-    sidebar.classList.toggle("collapsed");
-    
-    if (sidebar.classList.contains("collapsed")) {
-        cardContainer.style.marginLeft = "85px";
-    } else {
-        cardContainer.style.marginLeft = "270px";
+sidebar.addEventListener("mouseenter", () => {
+    if(sidebar.classList.contains("hoverable")) {
+        sidebar.classList.remove("close");
     }
 });
+
+sidebar.addEventListener("mouseleave", () => {
+    if(sidebar.classList.contains("hoverable")) {
+        sidebar.classList.add("close");
+    }
+});
+
+submenuItem1.addEventListener("click", () =>{
+    submenuItem1.classList.toggle("show_submenu");
+    submenuItem2.classList.remove("show_submenu");
+
+});
+
+submenuItem2.addEventListener("click", () => {
+    submenuItem2.classList.toggle("show_submenu");
+    submenuItem1.classList.remove("show_submenu");
+});
+
+
+if(window.innerWidth < 768) { 
+    sidebar.classList.add("close");
+
+}else {
+    sidebar.classList.remove("close")
+}
+
