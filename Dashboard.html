@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head> 
         <meta charset="UTF-8">
@@ -9,97 +9,134 @@
     
        
     </head>
-    <body> 
 
 
     <body>
         <nav class="navbar">
-        
             <div class="logo_item">
                 <i class="fa-solid fa-bars" id="sidebarOpen"></i>
-                <img src="MacFieldslogo.png" alt="MFHS">Macquarie Fields High School
+                <img src="MacFieldslogo.png" alt="MFHS">Student Dashboard
             </div>
 
             <div class="navbar_content">
-                <img src="Usericon.png" class="profile">
+                <img src="Usericon.png" class="profile"> 
             </div>
         </nav> 
 
         <nav class="sidebar">
-            <div class="menu_content">
-                <ul class="menu_items">
-                    <div class="menu_title menu_dashboard"></div>
-                    <li class="item">
-                        <div href="#" class="nav_link submenu_item" >
-                            <span class="navlink_icon">
-                                <i class="fa-solid fa-bars"></i>
-                            </span>
-                            
-                            <span class="navlink">Home</span>
-                            <i class="fa-solid fa-chevron-down" id="arrow-left"></i>
+            <ul class="menu_items">
+                
+                <li class="item">
+                    <a href="Dashboard.html" class="nav_link">
+                        <span class="icon">
+                            <i class="fa-solid fa-house"></i>
+                        </span>
+                        <span class="itemTitle">Dashboard</span>
+                    </a>
+                </li> 
 
-                        </div> 
-                        <ul class="menu_items submenu">
-                            <a href="#" class="nav_link sublink"> Nav Sub</a>
-                            <a href="#" class="nav_link sublink"> Nav Sub</a>
-                        </ul>
-                    </li>
+                <div class="menu_title subjects"></div>
 
-                    <li class="item">
-                        <div href="#" class="nav_link submenu_item">
-                            <span class="navlink_icon">
-                                <i class="fa-solid fa-bars"></i>
-                            </span>
-                            
-                            <span class="navlink">overview</span>
-                            <i class="fa-solid fa-chevron-down" id="arrow-left"></i>
-                        </div>
+                <li class="item">
+                    <a href="Biology.html" class="nav_link">
+                        <span class="icon">
+                            <i class="fa-solid fa-dna"></i>
+                        </span>
+                        <span class="itemTitle">Biology</span>
+                    </a>
+                </li> 
 
-                        <ul class="menu_items submenu"> 
-                            <a href="#" class="nav_link sublink"> Nab Sub link</a>
-                            <a href="#" class="nav_link sublink"> Nab Sub link</a>
-                        </ul>
-                    </li>
-                </ul>
+                <li class="item">
+                    <a href="English.html" class="nav_link">
+                        <span class="icon">
+                            <i class="fa-solid fa-book"></i>
+                        </span>
+                        <span class="itemTitle">English Advanced</span>
+                    </a>
+                </li> 
+
+                <li class="item">
+                    <a href="#" class="nav_link">
+                        <span class="icon">
+                            <i class="fa-solid fa-building"></i>
+                        </span>
+                        <span class="itemTitle">Enterprise Computing </span>
+                    </a>
+                </li>
 
 
-                <ul class="menu_items">
-                    
-                    <li class="item">
-                        <a href="#" class="nav_link">
-                            <span class="navlink_icon">
-                                <i class="fa-solid fa-circle-user"></i>
-                            </span>
-                            <span class="navlink">Magic build</span>
-                        </a>
-                    </li>
+                <li class="item">
+                    <div class="nav_link submenu_item" >
+                        <span class="icon">
+                            <i class="fa-solid fa-calculator"></i>
+                        </span>
+                        
+                        <span class="itemTitle">Maths</span>
+                        <i class="fa-solid fa-chevron-down arrow" ></i>
 
-                    <li class="item">
-                        <a href="#" class="nav_link">
-                            <span class="navlink_icon">
-                                <i class="fa-solid fa-circle-user"></i>
-                            </span>
-                            <span class="navlink">Magic build</span>
-                        </a>
-                    </li> 
+                    </div> 
+                    <ul class="menu_items submenu">
+                        
+                        <a href="MathsAdv.html" class="nav_link sublink">Maths Advanced</a>
+                        <a href="#" class="nav_link sublink">Maths Extension</a>
+                    </ul>
+                </li>
 
-                    
-                </ul>
+                <li class="item">
+                    <a href="#" class="nav_link">
+                        <span class="icon">
+                            <i class="fa-solid fa-code"></i>
+                        </span>
+                        <span class="itemTitle">Software Engineering </span>
+                    </a>
+                </li> 
+                
+            </ul>
 
-             
-                <div class="bottom_content">
-                    <div class="bottom expand_sidebar">
-                        <span>Expand</span>
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </div>
-                    <div class="bottom collapse_sidebar">
-                        <span> Collapse</span>
-                        <i class="fa-solid fa-chevron-left"></i>
-                    </div>
-
+            
+            <div class="bottom_content">
+                <div class="bottom expand_sidebar">
+                    <span>Expand</span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <div class="bottom collapse_sidebar">
+                    <span> Collapse</span>
+                    <i class="fa-solid fa-chevron-left"></i>
                 </div>
             </div>
+          
         </nav>
+
+        <main class="main_container">
+            <div class="card_container">
+                <div class="card">
+                    <h3>Highest Rank</h3>
+                    <h2>2/15</h2>
+                    <p>Software Engineering</p>
+                </div>
+
+                <div class="card">
+                    <h3>Lowest Rank</h3>
+                    <h2>30/49</h2>
+                    <p>Maths Extension</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Lowest Rank</h3>
+                    <h2>30/49</h2>
+                    <p>Maths Extension</p>
+                </div>
+            </div>
+        </main>
+
+
+
+
+
+        
+
+
+        
         <script src="dash.js"></script>
 
     
