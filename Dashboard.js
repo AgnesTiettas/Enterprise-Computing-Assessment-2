@@ -1,6 +1,6 @@
-
+//Intialise the variables 
 const sidebar = document.querySelector(".sidebar");
-const submenuItem = document.querySelector(".submenu_item");
+const submenuItem = document.querySelector(".dropdown");
 const sidebarToggle = document.querySelector("#sidebarOpen");
 const sidebarExpand= document.querySelector(".expand_sidebar");
 const sidebarCollapse = document.querySelector(".collapse_sidebar");
@@ -15,11 +15,15 @@ function updateSidebarControls() {
         sidebarCollapse.style.display="flex";
     }
 }
+
+//When the side bar is clicked when collapsed
 sidebarCollapse.addEventListener("click", () => {
     sidebar.classList.add("close", "hoverable");
     updateSidebarControls();
 })
 
+
+//When the side bar is clicked when expanded
 sidebarExpand.addEventListener("click", () => {
     sidebar.classList.remove("close", "hoverable");
     updateSidebarControls();
@@ -27,15 +31,13 @@ sidebarExpand.addEventListener("click", () => {
 
 
 // Open and close sidebar 
-
 sidebarToggle.addEventListener("click", () => {
       sidebar.classList.toggle("close");
       sidebar.classList.toggle("hoverable");
       updateSidebarControls();
 });
 
-
-
+//Temporary open and close 
 sidebar.addEventListener("mouseenter", () => {
     if(sidebar.classList.contains("hoverable")) {
         sidebar.classList.remove("close");
@@ -48,6 +50,7 @@ sidebar.addEventListener("mouseleave", () => {
     }
 });
 
+//Dropdown Visibility
 submenuItem.addEventListener("click", () =>{
     submenuItem.classList.toggle("show_submenu");
 
@@ -55,9 +58,7 @@ submenuItem.addEventListener("click", () =>{
 });
 
 
-
-
-
+//Responsive 
 if(window.innerWidth < 768) { 
     sidebar.classList.add("close");
 

@@ -113,7 +113,7 @@ body{
     background-color: lightgray;
 }
 
-.menu_items {
+.sidebar_items {
     padding-top:10px; 
     list-style: none;
 }
@@ -173,7 +173,7 @@ body{
     font-size: 15px;
 }
 
-.submenu_item .arrow{
+.dropdown .arrow{
     position:absolute; 
     right:20px;
     display: inline-block; 
@@ -182,7 +182,7 @@ body{
 
 
 
-.submenu_item.show_submenu +.submenu {
+.dropdown.show_submenu +.submenu {
     display:block;
 }
 
@@ -195,7 +195,7 @@ body{
     transform:rotate(180deg);
 }
 
-
+/*Bottom Section of Side Navigation Bar Styling*/
 .bottom_content{
     position:fixed; 
     bottom:60px; 
@@ -243,6 +243,7 @@ body{
     display:none;
 }
 
+/*Main Section Styling*/
 .main_container{
     margin-left:260px;
     transition: margin-left 0.3s ease;
@@ -269,6 +270,7 @@ body{
 .sidebar.close ~.main_container{
     margin-left:90px;
 }
+
 /*Responsive styling*/
 @media screen and (max-width: 768px) {
     #sidebarOpen {
