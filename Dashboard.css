@@ -271,6 +271,52 @@ body{
     margin-left:90px;
 }
 
+
+/*Visualisation Styling */
+.Chart {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 8px;
+    margin:10px;
+
+}
+.chart_row{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 40px 20px;
+
+}
+
+.chart_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+}
+
+.chart_caption{
+    text-align: center;
+    font-size:16px; 
+    color:#444; 
+    max-width: 600px;
+}
+.chart_caption_pie{
+    text-align: center;
+    font-size:16px; 
+    color:#444; 
+    max-width: 300px;
+
+}
+.chart_wrapper_tableauChart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 25px;
+    padding: 20px;
+    text-align: center;
+}
 /*Responsive styling*/
 @media screen and (max-width: 768px) {
     #sidebarOpen {
